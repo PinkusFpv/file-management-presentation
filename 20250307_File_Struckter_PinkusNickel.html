@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <style>
+        .folder-structure {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 0.7em;
+            line-height: 1.4;
+            max-height: 70vh;
+            overflow: auto;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8em;
+        }
+        .comparison-table td, .comparison-table th {
+            padding: 12px;
+            border: 1px solid #444;
+            vertical-align: top;
+        }
+        .emoji {
+            font-size: 1.2em;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+       <!-- Title Slide -->
+      <section>
+          <div style="text-align: center;">
+              <h1 style="margin-bottom: 0.5em;">📂 Optimized File Management</h1>
+              <h3 style="margin-bottom: 1.5em;">👨💼 Presented by: Pinkus Nickel</h3>
+
+              <div style="display: flex; justify-content: center; gap: 1.5em; font-size: 1.2em; margin-bottom: 2em;">
+                  <div><span class="emoji">🗄️</span>Accessibility</div>
+                  <div><span class="emoji">🤝</span>Collaboration</div>
+                  <div><span class="emoji">🔒</span>Security</div>
+              </div>
+          </div>
+      </section>
+            <!-- Overview -->
+            <section>
+                <h2>🚀 Key Objectives</h2>
+                <ul>
+                    <li class="fragment">🗂️ Consistent folder structures</li>
+                    <li class="fragment">📅 ISO 8601 date formatting</li>
+                    <li class="fragment">🌐 English naming conventions</li>
+                    <li class="fragment">🔑 Granular access controls</li>
+                </ul>
+            </section>
+
+            <!-- Full Folder Structure Slide -->
+            <section>
+                <h2>📂 Current Folder Structure</h2>
+                <pre class="folder-structure"><code>
+                Root/
+                ├── 1_Vermarktung
+                ├── 1_Zonnepark Services Nederland B.V
+                ├── 23 BESS Konferenz Osteuropa
+                ├── AGUILA SOLAR SPA
+                ├── Asset Management Team
+                ├── BEE Caribe 1
+                ├── BEE Caribe 2
+                ... (rest of the structure)
+                └── Finanzen - Verknüpfung
+                </code></pre>
+            </section>
+
+            <!-- Abstract Folder Structure Slide -->
+            <section>
+                <h2>📂 Abstract Folder Structure</h2>
+                <pre class="folder-structure"><code>
+                Root/
+                ├── 📁 Business & Projects
+                ├── 📁 Financial & Legal
+                ├── 📁 Technical & Development
+                ├── 📁 Administration & Communication
+                └── 📁 Templates & Reports
+                </code></pre>
+            </section>
+           <!-- Current Problems Slide 1 -->
+          <section>
+              <h2>⚠️ Current Structural Issues</h2>
+              <div style="text-align: left; margin: 0 auto; max-width: 800px;">
+                  <p class="fragment">📛 <strong>Inconsistent Naming:</strong><br>
+                  <small>Mix of German/English, special characters, varying formats</small></p>
+
+                  <p class="fragment">🗂️ <strong>Over-Fragmentation:</strong><br>
+                  <small>45+ top-level folders without logical grouping</small></p>
+
+                  <p class="fragment">🔎 <strong>Poor Discoverability:</strong><br>
+                  <small>No standardized metadata or search conventions</small></p>
+
+                  <p class="fragment">🤝 <strong>Collaboration Issues:</strong><br>
+                  <small>Duplicate folders (BEE Caribe 1/2, LATAM I/II)</small></p>
+              </div>
+          </section>
+
+          <!-- Current Problems Slide 2 -->
+          <section>
+              <h2>🚨 Key Risks</h2>
+
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 25px;">
+                  <div class="fragment" style="background: #444; padding: 15px; border-radius: 8px;">
+                      <div class="emoji">📈</div>
+                      <h4>Version Control</h4>
+                      <p style="font-size: 0.7em; margin: 5px 0;">Duplicate files across locations</p>
+                  </div>
+
+                  <div class="fragment" style="background: #444; padding: 15px; border-radius: 8px;">
+                      <div class="emoji">🔓</div>
+                      <h4>Security</h4>
+                      <p style="font-size: 0.7em; margin: 5px 0;">Inherited permission issues</p>
+                  </div>
+
+                  <div class="fragment" style="background: #444; padding: 15px; border-radius: 8px;">
+                      <div class="emoji">⏳</div>
+                      <h4>Efficiency</h4>
+                      <p style="font-size: 0.7em; margin: 5px 0;">15-30min daily search time</p>
+                  </div>
+
+                  <div class="fragment" style="background: #444; padding: 15px; border-radius: 8px;">
+                      <div class="emoji">💸</div>
+                      <h4>Compliance</h4>
+                      <p style="font-size: 0.7em; margin: 5px 0;">No collaboration possible</p>
+                  </div>
+              </div>
+
+              <div class="fragment" style="margin-top: 20px; background: #700; padding: 10px; border-radius: 6px;">
+                  <p style="margin: 5px; font-size: 0.9em;">
+                  🚩 Critical Impact: M&A delays + 15% productivity loss
+                  </p>
+              </div>
+          </section>
+
+          <!-- Option 1 -->
+          <section>
+              <section>
+                  <h2>🏢 Option 1: Local Share Upgrade</h2>
+                  <pre class="folder-structure"><code>
+          TaktikShare/
+          ├── 📁 Investment           # Primary project container
+          │   ├── 📂 Documents        # Standardized subfolder
+          │   │   ├── 📄 2023-11-15_contract-draft_v2.pdf
+          │   │   └── 📄 project-charter.md
+          │   └── 📂 Contracts        # Version-controlled
+          └── 📁 HR                   # Department root
+              ├── 📑 Policies         # Access-controlled
+              └── 👥 Recruitment      # Candidate pipeline
+                  </code></pre>
+                  <div style="font-size:0.6em; margin-top:15px">
+                      <span class="emoji">📌</span> MIT Best Practices Applied:
+                      <ul>
+                          <li>Consistent depth (max 3 levels)</li>
+                          <li>Clear folder purposes</li>
+                          <li>Date-formatted filenames (YYYY-MM-DD)</li>
+                      </ul>
+                  </div>
+              </section>
+
+    <!-- New Structure Preservation Slide -->
+    <section>
+        <h3>🌍 English Transition Strategy</h3>
+        <div style="text-align: left; font-size:0.8em">
+            <div class="fragment">
+                <span class="emoji">🔄</span> <strong>Renaming Protocol:</strong>
+                <ul>
+                    <li>"Verträge" → "Contracts"</li>
+                    <li>"Personal" → "HR"</li>
+                    <li>Special characters removed</li>
+                </ul>
+            </div>
+            
+            <div class="fragment" style="margin-top:20px">
+                <span class="emoji">🔗</span> <strong>Legacy Compatibility:</strong>
+                <ul>
+                    <li>File paths remain functional</li>
+                    <li>Symbolic links preserve access</li>
+                    <li>Redirects for common misspellings</li>
+                </ul>
+            </div>
+            
+            <div class="fragment" style="background:#334;padding:10px;margin-top:15px">
+                <small>"Maintain existing references while improving clarity" - UCLA Folder Structure Guide</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Permissions Slide -->
+    <section>
+        <h3>🔐 Permission Governance</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size:0.7em">
+            <div>
+                <span class="emoji">👥</span> <strong>Ownership Model:</strong>
+                <ul>
+                    <li>Department heads as co-owners</li>
+                    <li>AD group-based access</li>
+                    <li>Inheritance maintained</li>
+                </ul>
+            </div>
+            <div>
+                <span class="emoji">📜</span> <strong>Security Principles:</strong>
+                <ul>
+                    <li>Least privilege enforced</li>
+                    <li>Quarterly access reviews</li>
+                    <li>Change via group membership</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fragment" style="margin-top:15px; background:#343; padding:10px">
+            <small>"Align folder ownership with organizational charts for accountability" - UCLA IT Guidelines</small>
+        </div>
+    </section>
+
+    <!-- Departmental Alignment Slide -->
+    <section>
+        <h3>🏛 Departmental Structure</h3>
+        <div style="display: grid; grid-template-columns: 60% 40%; gap: 20px; font-size:0.7em">
+            <div>
+                <span class="emoji">📂</span> <strong>Workflow Mapping:</strong>
+                <ul>
+                    <li>HR: Recruitment/Policies/Records</li>
+                    <li>Investment: Projects/Financials</li>
+                    <li>Development: Consolidated repos</li>
+                    <li>Technical Department: TDD/O&amp;M</li>
+
+                </ul>
+            </div>
+            <div style="background:#222;padding:15px;border-radius:8px">
+                <span class="emoji">💡</span> <strong>Best Practice:</strong>
+                <p>"Group by function, not file type" - SuiteFiles Guide</p>
+            </div>
+        </div>
+        <div class="fragment" style="margin-top:15px">
+            <span class="emoji">🔄</span> Process:
+            <ol style="font-size:0.7em">
+                <li>Department workshops</li>
+                <li>Redundancy analysis</li>
+                <li>Consolidation plan</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Standardization Slide -->
+    <section>
+        <h3>📑 Template System</h3>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; font-size:0.7em">
+            <div style="background:#334;padding:10px">
+                <span class="emoji">📁</span><br>
+                <strong>Core Subfolders</strong>
+                <ul style="list-style:none;padding:0">
+                    <li>Documents</li>
+                    <li>Reports</li>
+                    <li>Contracts</li>
+                </ul>
+            </div>
+            <div style="background:#334;padding:10px">
+                <span class="emoji">📄</span><br>
+                <strong>Templates</strong>
+                <ul style="list-style:none;padding:0">
+                    <li>Report.docx</li>
+                    <li>Meeting Notes.md</li>
+                    <li>Project Charter</li>
+                </ul>
+            </div>
+            <div style="background:#334;padding:10px">
+                <span class="emoji">⚙️</span><br>
+                <strong>Standards</strong>
+                <ul style="list-style:none;padding:0">
+                    <li>Naming Conventions</li>
+                    <li>Version Control</li>
+                    <li>Retention Policy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fragment" style="margin-top:15px; background:#343; padding:10px">
+            <small>"Template replication ensures structural consistency" - EZ Computer Solutions</small>
+        </div>
+    </section>
+
+    <!-- Existing Implementation Steps -->
+    <section>
+        <h3>🔧 Implementation Steps</h3>
+        <ol style="font-size:0.8em">
+            <li>🔍 Audit existing structure</li>
+            <li>🔄 Translate folder names</li>
+            <li>📋 Create template subfolders</li>
+            <li>📢 User training program</li>
+        </ol>
+    </section>
+	</section>
+    <!-- Option 2 -->
+    <section>
+        <section>
+            <h2>☁️ Option 2: Cloud Migration</h2>
+            <div class="grid-2col">
+                <div>
+                    <h4>Options</h4>
+                    <ul>
+                        <li>SharePoint</li>
+                        <li>OneDrive</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>✨ Key Features</h4>
+                    <ul>
+                        <li>✍️ Real-time collaboration</li>
+                        <li>🕰️ Version history</li>
+                        <li>🔗 Sharing links</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    <!-- Architecture Design Slide -->
+    <section>
+        <h3>🏗️ Cloud Architecture</h3>
+        <div style="display: grid; grid-template-columns: 60% 40%; gap: 20px; font-size:0.8em">
+            <div>
+                <span class="emoji">📚</span> <strong>SharePoint Design:</strong>
+                <ul>
+                    <li>Single site with departmental libraries</li>
+                    <li>Security groups per department</li>
+                    <li>Inheritance control</li>
+                </ul>
+            </div>
+            <div style="background:#334;padding:15px;border-radius:8px">
+                <span class="emoji">💡</span> <strong>Best Practice:</strong>
+                <p>"Start with single site for simplified navigation" - Microsoft Tech Community</p>
+            </div>
+        </div>
+        <div class="fragment" style="margin-top:15px">
+            <span class="emoji">⚙️</span> <strong>Configuration:</strong>
+            <ul style="font-size:0.7em">
+                <li>External sharing settings</li>
+                <li>90-day recycle bin</li>
+				<li>Permissions options</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- Migration Process Slide -->
+    <section>
+        <h3>📦 Migration Workflow</h3>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; font-size:0.7em">
+            <div class="fragment" style="background:#334;padding:10px">
+                <span class="emoji">1️⃣</span><br>
+                <strong>Platform Setup</strong>
+                <ul>
+                    <li>EU tenant configuration</li>
+                    <li>Compliance validation</li>
+                </ul>
+            </div>
+            <div class="fragment" style="background:#334;padding:10px">
+                <span class="emoji">2️⃣</span><br>
+                <strong>Structure Mapping</strong>
+                <ul>
+                    <li>Department libraries</li>
+                    <li>Permission groups</li>
+                </ul>
+            </div>
+            <div class="fragment" style="background:#334;padding:10px">
+                <span class="emoji">3️⃣</span><br>
+                <strong>Data Transfer</strong>
+                <ul>
+                    <li>SharePoint Migration Tool</li>
+                    <li>Phased department rollout</li>
+                </ul>
+            </div>
+            <div class="fragment" style="background:#334;padding:10px">
+                <span class="emoji">4️⃣</span><br>
+                <strong>User Transition</strong>
+                <ul>
+                    <li>OneDrive sync setup</li>
+                    <li>Legacy system read-only</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Governance Slide -->
+    <section>
+        <h3>🎓 Adoption Strategy</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size:0.7em">
+            <div>
+                <span class="emoji">📘</span> <strong>Training Program:</strong>
+                <ul>
+                    <li>Live co-authoring demos</li>
+                    <li>Version recovery walkthroughs</li>
+                    <li>Offline access setup</li>
+                </ul>
+            </div>
+            <div>
+                <span class="emoji">🛡️</span> <strong>Governance Model:</strong>
+                <ul>
+                    <li>Library creation controls</li>
+                    <li>Quarterly permission audits</li>
+                    <li>Retention policy enforcement</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fragment" style="margin-top:15px; background:#343; padding:10px">
+            <small>"Establish clear ownership before decommissioning legacy systems" - Migration Best Practices</small>
+        </div>
+    </section>
+
+    <!-- Implementation Steps Slide -->
+    <section>
+        <h3>🔧 Implementation Roadmap</h3>
+        <table class="comparison-table" style="font-size:0.7em">
+            <tr>
+                <th>Phase</th>
+                <th>Actions</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Preparation</td>
+                <td>Platform selection, Architecture design</td>
+                <td>2 weeks</td>
+            </tr>
+            <tr>
+                <td>Migration</td>
+                <td>Data transfer, User redirection</td>
+                <td>6-8 weeks</td>
+            </tr>
+            <tr>
+                <td>Optimization</td>
+                <td>Training, Governance setup</td>
+                <td>Ongoing</td>
+            </tr>
+        </table>
+        
+        <div class="fragment" style="margin-top:15px; background:#334; padding:10px">
+            <span class="emoji">⚠️</span> Critical Path: Departmental validation before legacy decommission
+        </div>
+    </section>
+</section>
+
+            <!-- Comparison -->
+            <section>
+                <h2>⚖️ Solution Comparison</h2>
+                <table class="comparison-table">
+                    <tr>
+                        <th>Local Share</th>
+                        <th>Cloud Solution</th>
+                    </tr>
+                    <tr>
+                        <td>🔄 Evolutionary change</td>
+                        <td>🚀 Revolutionary upgrade</td>
+                    </tr>
+                    <tr>
+                        <td>💸 Low upfront cost</td>
+                        <td>📈 Subscription model</td>
+                    </tr>
+                    <tr>
+                        <td>🔒 AD permissions</td>
+                        <td>🌐 Granular sharing</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Recommendations -->
+            <section>
+                <h2>🏆 Final Recommendations</h2>
+                <div class="grid-2col">
+                    <div class="fragment">
+                        <h4>🛠️ Immediate Steps</h4>
+                        <ul>
+                            <li>Implement Option 1 cleanup</li>
+                            <li>Establish naming conventions</li>
+                        </ul>
+                    </div>
+                    <div class="fragment">
+                        <h4>🚀 Strategic Plan</h4>
+                        <ul>
+                            <li>6-month cloud migration</li>
+                            <li>User training program</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'slide',
+            pdfSeparateFragments: false
+        });
+    </script>
+</body>
+</html>
